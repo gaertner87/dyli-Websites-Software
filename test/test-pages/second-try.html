@@ -11,7 +11,7 @@
         <!-- Favicon für die Webseite -->
         <link rel="shortcut icon" href="/Assets/allgemein/logo.ico" type="image/x-icon">
         <!-- Einbinden der eigenen CSS-Datei -->
-        <link href="/styles/dyli-webseiten&software.css" rel="stylesheet">
+        <link href="/test/test-styles/first-try.css" rel="stylesheet">
         <!-- Einbinden der Bootstrap CSS-Datei -->
         <link href="/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Einbinden der Bootstrap JS-Datei -->
@@ -20,37 +20,45 @@
     </head>
     <body>
         <div class="container-fluid">
-            <!-- Sidebar/menu -->
-            <nav id="mySidebar" class="sidebar" aria-label="Navigationsmenü">
-                <div class="display-container">
-                    <img class="sidebar-img" src="/Assets/allgemein/ich.png"
-                        alt="Bild von Kerstin Gärtner" loading="lazy">
+            <!-- Navigationsinhalt der Seite -->
+            <nav class="sidebar" id="mySidebar" aria-label="Navigationsmenü">
+                <!-- Sidebar/logo -->
+                <div class="container">
+                    <div class="sidebar-img-row">
+                        <div class="sidebar-img">
+                            <img src="/Assets/allgemein/Logo.png" alt="Logo von Kerstin Gärtner"
+                                loading="lazy">
+                        </div>
+                    </div>
                 </div>
-                <div class="sidebar-text">
-                    <h3><b>Kerstin Gärtner</b></h3>
-                    <p class="fw-normal mb-1">Fachinformatikerin für Anwendungsentwicklung</p>
-                    <p class="small mb-1">Bochum, Deutschland</p>
+                <!-- Sidebar/menu-->
+                <div class="container">
+                    <div class="sidebar-menu-row">
+                        <div class="sidebar-menu">
+                            <a href="#home" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Home</a>
+                            <a href="#projects" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Profil</a>
+                            <a href="#about" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Portfolio</a>
+                            <a href="#contact" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Kontakt</a>
+                        </div>
+                    </div>
                 </div>
-                <nav class="sidebar-block">
-                    <a href="#hero" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Start</a>
-                    <a href="#projects" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Meine Projekte</a>
-                    <a href="#about" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Über mich</a>
-                    <a href="#contact" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Kontakt</a>
-                </nav>
             </nav>
 
             <!-- Hauptinhalt der Seite -->
             <main class="main-container">
-                <!-- Hero Section -->
-                <header id="hero" class="main-header py-5">
+                <!-- Home Section -->
+                <header id="home" class="main-header py-5">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-md-8 offset-md-2 header-headline">
-                                <h1 class="mb-4"><b>Portfolio</b></h1>
+                                <h1 class="mb-4"><b>Kerstin Gärtner</b></h1>
+                                <p class="lead">Webseiten & Software</p>
                             </div>
                         </div>
                     </div>
                 </header>
+
+                
 
                 <!-- Über mich Section -->
                 <section id="about" class="py-5">
