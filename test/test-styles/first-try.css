@@ -1,6 +1,6 @@
 /* CSS Variablen für bessere Wartbarkeit und Konsistenz */
 :root {
-    --primary-bg: #f8f9fa;
+    --primary-bg: #f3f3f3;
     --dark-bg: #343a40;
     --hover-bg: #4f5a62;
     --text-light: white;
@@ -148,7 +148,7 @@ img {
     border-radius: var(--border-radius);
 }
 
-.knowledge-row-padding {
+.skill-row-padding {
     padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
     margin-bottom: calc(var(--spacing-unit) * 2);
     background-color: var(--primary-bg);
