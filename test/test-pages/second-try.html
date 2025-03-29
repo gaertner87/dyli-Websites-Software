@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
+        <!-- Grundlegende Metainformationen für die Webseite -->
         <meta charset="UTF-8">
-        <!-- Bildschirmskalierung -->
+
+        <!-- Responsive Design-Einstellungen -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Dokumentauthor -->
+        
+        <!-- Meta-Tags für SEO und Dokumentinformationen -->
         <meta name="author" content="Kerstin Gärtner">
-        <!-- Webseitentitel -->
+        <meta name="description" content="Persönliche Website von Kerstin Gärtner - Webentwicklung und Software-Lösungen">
+        
+        <!-- Titel der Webseite im Browser-Tab -->
         <title>Kerstin Gärtner</title>
-        <!-- Favicon für die Webseite -->
+        
+        <!-- Favicon für Browser-Tab und Lesezeichen -->
         <link rel="shortcut icon" href="/Assets/allgemein/logo.ico" type="image/x-icon">
-        <!-- Einbinden der eigenen CSS-Datei -->
+        
+        <!-- Stylesheet-Einbindungen -->
         <link href="/test/test-styles/first-try.css" rel="stylesheet">
-        <!-- Einbinden der Bootstrap CSS-Datei -->
         <link href="/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Einbinden der Bootstrap JS-Datei -->
-        <!-- DEFER sorgt dafür, dass JS-Datei erst am Ende ausgeführt wird -->
+        
+        <!-- JavaScript-Einbindung -->
+        <!-- DEFER sorgt für bessere Seitenladegeschwindigkeit durch verzögertes Laden -->
         <script src="/Bootstrap/js/bootstrap.bundle.min.js" defer></script>
     </head>
     <body>
+        <!-- Container für das gesamte Layout -->
         <div class="container-fluid">
-            <!-- Navigationsinhalt der Seite -->
+            <!-- Navigationsbereich mit Sidebar -->
             <nav class="sidebar" id="mySidebar" aria-label="Navigationsmenü">
-                <!-- Sidebar/logo -->
+                <!-- Logo-Bereich der Sidebar -->
                 <div class="container">
                     <div class="sidebar-img-row">
                         <div class="sidebar-img">
@@ -31,10 +39,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sidebar/menu-->
+                <!-- Navigationselemente -->
                 <div class="container">
                     <div class="sidebar-menu-row">
                         <div class="sidebar-menu">
+                            <!-- Hauptnavigation mit Anchor-Links zu den entsprechenden Bereichen -->
                             <a href="#home" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Home</a>
                             <a href="#about" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Profil</a>
                             <a href="#projects" class="sidebar-item sidebar-btn nav-link fw-semibold fs-5">Portfolio</a>
@@ -46,7 +55,7 @@
 
             <!-- Hauptinhalt der Seite -->
             <main class="main-container">
-                <!-- Header Section -->
+                <!-- Header-Section mit Überschrift und Untertitel -->
                 <header class="main-header py-5">
                     <div class="container">
                         <div class="row align-items-center">
@@ -60,7 +69,7 @@
                     </div>
                 </header>
 
-                <!-- Home mich Section -->
+                <!-- Home-Section -->
                 <section id="home" class="py-5">
                     <div class="container">
                         <div class="about-row-padding mb-0">
@@ -83,9 +92,10 @@
                     </div>
                 </section>
 
-                <!-- Profil Section -->
+                <!-- Profil-Section mit Skills -->
                 <section id="about" class="py-5">
                     <div class="container">
+                        <!-- Textbereich des Profils -->
                         <div class="about-row-padding mb-0">
                             <div class="col-9">
                                 <h4 class="mb-3"><b>Profil</b></h4><hr>
@@ -95,6 +105,8 @@
                                     konzeptionellen Planung, der technischen Umsetzung und dem Qualitätsmanagement von Softwareprojekten.
                                 </p>
                             </div>
+
+                            <!-- Logo zur visuellen Ergänzung -->
                             <div class="col-3">
                                 <div class="about-img align-items-center">
                                     <img src="/Assets/allgemein/Logo.png" alt="Logo von Kerstin Gärtner" 
@@ -132,12 +144,12 @@
                     </div>
                 </section>
 
-                <!-- Projekte Section -->
+                <!-- Portfolio-Bereich mit Projektpräsentation -->
                 <section id="projects" class="py-5">
-                    <!-- First Projekte Section Block-->
+                    <!-- Erster Block mit Webprojekten -->
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <!-- Projekt Card -->
+                            <!-- Projekt-Karte 1: Landing Page -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/webseiten/landing-page/Landing-page_Start.png"
@@ -152,7 +164,8 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Projekt Card -->
+                            
+                            <!-- Projekt-Karte 2: Foodblog -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/webseiten/fuchsbau/Fuchsbau-Startseite.png"
@@ -167,7 +180,8 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Projekt Card -->
+                            
+                            <!-- Projekt-Karte 3: Did you like it -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/webseiten/did you like it/dyli-Start.png"
@@ -184,10 +198,12 @@
                             </article>
                         </div>
                     </div>
-                    <!-- Second Projekte Section Block -->
+
+                    <!-- Zweiter Block mit weiteren Projekten -->
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <!-- Projekt Card -->
+                            
+                            <!-- Projekt-Karte 4: Breakout Ball -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/java/Java-App BreakoutBall.png"
@@ -202,7 +218,8 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Projekt Card -->
+                            
+                            <!-- Projekt-Karte 5: Spielesammlung -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/csharp/Konsolenanwendung Spielesammlung.png"
@@ -217,7 +234,8 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Projekt Card -->
+                            
+                            <!-- Projekt-Karte 6: Dokumentationen -->
                             <article class="col">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <img src="/Assets/dokus/Doku-Deckblatt.png"
@@ -236,14 +254,17 @@
                     </div>
                 </section>
 
-                <!-- Kontakt Section -->
+                <!-- Kontaktformular -->
                 <section id="contact" class="py-5">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-lg-6">
                                 <h2 class="mb-4 text-center"><b>Kontakt</b></h2>
+
+                                <!-- Validiertes Kontaktformular -->
                                 <form action="/action_page.php" method="post" target="_blank" class="needs-validation" novalidate>
                                     <div class="row">
+                                        <!-- Name-Eingabefelder -->
                                         <div class="col form-floating mb-3 mt-3">
                                             <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
                                             <label for="fname">Vorname</label>
@@ -257,18 +278,21 @@
                                         </div>
                                     </div>
                                     
+                                    <!-- Email-Eingabefeld -->
                                     <div class="col form-floating mb-3 mt-3">
                                         <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
                                         <label for="email">Email</label>
                                         <div class="invalid-feedback">Bitte tragen Sie eine gültige E-Mail-Adresse ein.</div>
                                     </div>
 
+                                    <!-- Nachrichtentextfeld -->
                                     <div class="form-floating mb-3 mt-3">
                                         <textarea class="form-control" id="message" name="message" placeholder="Message goes here" rows="5"></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback">Bitte tragen Sie Ihre Nachricht ein.</div>
                                     </div>
 
+                                    <!-- Formularabsende-Button -->
                                     <button type="submit" class="btn btn-secondary w-100 mt-3">Nachricht senden</button>
                                 </form>
                             </div>
@@ -276,7 +300,7 @@
                     </div>
                 </section>
 
-                <!-- Footer Section -->
+                <!-- Footer-Section mit Copyright und Impressum-Link -->
                 <footer class="main-footer py-4 mt-auto bg-dark">
                     <div class="container text-center">
                         <div class="row">

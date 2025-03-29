@@ -1,23 +1,35 @@
-/* CSS Variablen für bessere Wartbarkeit und Konsistenz */
-:root {
-    --primary-bg: #f3f3f3;
-    --dark-bg: #343a40;
-    --hover-bg: #4f5a62;
-    --text-light: white;
-    --text-muted: #adb5bd;
-    --sidebar-bg: #222;
-    --spacing-unit: 8px;
-    --border-radius: 5px;
-    --transition-speed: 0.3s;
+/* CSS Variablen für bessere Wartbarkeit und Konsistenz
+ * Diese Variablen definieren die grundlegenden Design-Elemente der Website
+ * und ermöglichen einfache globale Anpassungen
+ */
+ :root {
+    /* Farben für verschiedene UI-Elemente */
+    --primary-bg: #f3f3f3;    /* Hintergrundfarbe für Hauptbereiche */
+    --dark-bg: #343a40;       /* Dunkle Hintergrundfarbe für Header und Footer */
+    --hover-bg: #4f5a62;      /* Hover-Effekt Farbe */
+    --text-light: white;      /* Hell für Text auf dunklem Hintergrund */
+    --text-muted: #adb5bd;    /* Ausgegraute Textfarbe */
+    --sidebar-bg: #222;       /* Sidebar Hintergrundfarbe */
+    
+    /* Layout und Abstände */
+    --spacing-unit: 8px;      /* Basis-Einheit für Abstände */
+    --border-radius: 5px;     /* Eckenrundung für alle Elemente */
+    --transition-speed: 0.3s; /* Übergangs-Geschwindigkeit für Animationen */
 }
 
-/* Basis-Styling und Reset */
+/* Basis-Styling und Reset
+ * Setzt grundlegende Styles für alle Elemente
+ * und normalisiert Browser-Unterschiede
+ */
 * {
-    box-sizing: inherit;
+    box-sizing: inherit;  /* Vererbt box-sizing von parent */
     margin: 0;
     padding: 0;
 }
 
+/* Basis-Styles für den Body
+ * Definiert grundlegende Schriftarten und Layout-Eigenschaften
+ */
 body {
     font-family: Verdana, sans-serif;
     height: 100%;
@@ -26,7 +38,9 @@ body {
     line-height: 1.6;
 }
 
-/* Bild-Optimierung */
+/* Bild-Optimierung
+ * Stellt sicher, dass Bilder responsiv und optimal dargestellt werden
+ */
 img {
     vertical-align: middle;
     border-style: none;
@@ -35,7 +49,9 @@ img {
     object-fit: cover;
 }
 
-/* Container-System */
+/* Container-System
+ * Definiert die grundlegenden Layout-Container
+ */
 .container {
     padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
     margin: 0 auto;
@@ -47,7 +63,9 @@ img {
     width: 100%;
 }
 
-/* Sidebar-Styling */
+/* Sidebar-Styling
+ * Definiert das Navigationsmenü auf der linken Seite
+ */
 .sidebar {
     width: 200px;
     height: 100%;
@@ -61,6 +79,9 @@ img {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
+/* Sidebar-Inhalt
+ * Styles für die Navigationselemente
+ */
 .sidebar-img {
     width: 100%;
     height: auto;
@@ -104,13 +125,18 @@ img {
     background-color: var(--hover-bg);
 }
 
-/* Hauptbereich */
+/* Hauptbereich
+ * Definiert den Inhaltbereich rechts von der Sidebar
+ */
 .main-container {
     margin-left: 250px;
     padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
     min-height: 100vh;
 }
 
+/* Header-Bereich
+ * Styles für den Kopfbereich der Seite
+ */
 .main-header {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -123,7 +149,9 @@ img {
     margin: var(--spacing-unit) 0;
 }
 
-/* Über-mich-Bereich */
+/* Über-mich-Bereich
+ * Styles für den Profilbereich
+ */
 .about-container {
     margin: 0 calc(var(--spacing-unit) * 2);
     padding: calc(var(--spacing-unit) * 2) 0;
@@ -156,7 +184,9 @@ img {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Projektbereich */
+/* Projektbereich
+ * Styles für die Projektanzeige
+ */
 .project-container {
     margin: 0 calc(var(--spacing-unit) * 2);
 }
@@ -190,7 +220,9 @@ img {
     justify-content: center;
 }
 
-/* Kontaktformular */
+/* Kontaktformular
+ * Styles für das Kontaktformular
+ */
 .contact-container {
     margin: 0 calc(var(--spacing-unit) * 2);
     padding: calc(var(--spacing-unit) * 2) 0;
@@ -234,7 +266,9 @@ input[type="submit"]:hover {
     background-color: var(--hover-bg);
 }
 
-/* Footer */
+/* Footer
+ * Styles für den unteren Bereich der Seite
+ */
 .main-footer {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -243,7 +277,9 @@ input[type="submit"]:hover {
     margin-top: calc(var(--spacing-unit) * 4);
 }
 
-/* Responsive Design */
+/* Responsive Design
+ * Anpassungen für mobile Geräte
+ */
 @media (max-width: 768px) {
     .sidebar {
         width: 100%;
@@ -251,17 +287,17 @@ input[type="submit"]:hover {
         position: relative;
         box-shadow: none;
     }
-
+    
     .main-container {
         margin-left: 0;
         padding: var(--spacing-unit);
     }
-
+    
     .project-row-padding {
         flex-direction: column;
         gap: var(--spacing-unit);
     }
-
+    
     .contact-row-padding {
         padding: 0 var(--spacing-unit);
     }
