@@ -7,7 +7,7 @@
         <!-- Dokumentauthor -->
         <meta name="author" content="Kerstin Gärtner">
         <!-- Webseitentitel -->
-        <title>Mein Portfolio</title>
+        <title>Kerstin Gärtner</title>
         <!-- Favicon für die Webseite -->
         <link rel="shortcut icon" href="/Assets/allgemein/logo.ico" type="image/x-icon">
         <!-- Einbinden der eigenen CSS-Datei -->
@@ -220,25 +220,30 @@
                             <div class="col-md-8 col-lg-6">
                                 <h2 class="mb-4 text-center"><b>Kontakt</b></h2>
                                 <form action="/action_page.php" method="post" target="_blank" class="needs-validation" novalidate>
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input type="text" id="name" name="name" class="form-control"
-                                            placeholder="Ihr Name..." required>
-                                        <div class="invalid-feedback">Bitte tragen Sie Ihren Namen ein.</div>
-                                    </div>
+                                    <div class="row">
+                                        <div class="col form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
+                                            <label for="fname">Vorname</label>
+                                            <div class="invalid-feedback">Bitte tragen Sie Ihre Vornamen ein.</div>
+                                        </div>
 
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">E-Mail</label>
-                                        <input type="email" id="email" name="email" class="form-control"
-                                            placeholder="Ihre E-Mail..." required>
+                                        <div class="col form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname">
+                                            <label for="lname">Nachname</label>
+                                            <div class="invalid-feedback">Bitte tragen Sie Ihre Nachnamen ein.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col form-floating mb-3 mt-3">
+                                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <label for="email">Email</label>
                                         <div class="invalid-feedback">Bitte tragen Sie eine gültige E-Mail-Adresse ein.</div>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label">Nachricht</label>
-                                        <textarea id="message" name="message" class="form-control"
-                                            placeholder="Ihre Nachricht..." rows="5" required></textarea>
-                                        <div class="invalid-feedback">Bitte tragen Sie Ihre Frage oder Anliegen ein.</div>
+                                    <div class="form-floating mb-3 mt-3">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message goes here" rows="5"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback">Bitte tragen Sie Ihre Nachricht ein.</div>
                                     </div>
 
                                     <button type="submit" class="btn btn-secondary w-100 mt-3">Nachricht senden</button>
